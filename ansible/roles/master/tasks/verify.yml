@@ -1,0 +1,10 @@
+---
+- name: Verify Kubernetes cluster nodes
+  shell: kubectl get nodes -o wide
+  environment:
+    KUBECONFIG: /etc/kubernetes/admin.conf
+  register: cluster_nodes
+
+- name: Show cluster nodes
+  debug:
+    var: cluster_nodes.stdout_lines
