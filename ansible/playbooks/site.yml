@@ -1,0 +1,32 @@
+---
+# ----------------------------------------
+# Common Kubernetes Node Preparation
+# ----------------------------------------
+- name: Prepare Kubernetes nodes
+  hosts: k8s_cluster
+  become: yes
+
+  roles:
+    - common
+    - containerd
+    - kubernetes
+
+# ----------------------------------------
+# Initialize Kubernetes Master
+# ----------------------------------------
+- name: Configure Kubernetes master
+  hosts: k8s_master
+  become: yes
+
+  roles:
+    - master
+
+# ----------------------------------------
+# Join Worker Nodes
+# ----------------------------------------
+- name: Join Kubernetes workers
+  hosts: k8s_workers
+  become: yes
+
+  roles:
+    - worker

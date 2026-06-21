@@ -1,0 +1,8 @@
+- name: Initialize Kubernetes cluster
+  command: >
+    kubeadm init
+    --apiserver-advertise-address={{ apiserver_advertise_address }}
+    --pod-network-cidr={{ pod_network_cidr }}
+    --upload-certs
+  args:
+    creates: /etc/kubernetes/admin.conf

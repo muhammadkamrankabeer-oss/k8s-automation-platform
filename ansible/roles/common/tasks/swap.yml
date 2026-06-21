@@ -1,0 +1,9 @@
+---
+- name: Disable swap immediately
+  command: swapoff -a
+
+- name: Remove swap from fstab
+  replace:
+    path: /etc/fstab
+    regexp: '^([^#].*swap.*)$'
+    replace: '# \\1'

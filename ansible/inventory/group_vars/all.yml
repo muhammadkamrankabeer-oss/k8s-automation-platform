@@ -1,0 +1,6 @@
+pod_network_cidr: "192.168.0.0/16"
+
+apiserver_advertise_address: "{{ ansible_host }}"
+
+kubernetes_version: "1.29.0"
+

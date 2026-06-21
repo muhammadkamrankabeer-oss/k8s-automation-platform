@@ -1,0 +1,17 @@
+---
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Install required system packages
+  apt:
+    name:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - gnupg
+      - lsb-release
+      - vim
+      - git
+      - net-tools
+    state: present
