@@ -1,0 +1,60 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#10192b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#326ce5"/>
+      <stop offset="100%" stop-color="#5b8def"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="260" fill="url(#bg)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#1c2536" stroke-width="1">
+    <line x1="0" y1="65" x2="1200" y2="65"/>
+    <line x1="0" y1="130" x2="1200" y2="130"/>
+    <line x1="0" y1="195" x2="1200" y2="195"/>
+  </g>
+
+  <!-- kubernetes wheel icon -->
+  <g transform="translate(95,130)">
+    <circle r="55" fill="none" stroke="#326ce5" stroke-width="3" opacity="0.5"/>
+    <g fill="#5b8def">
+      <circle r="6"/>
+      <circle cx="0" cy="-48" r="5"/>
+      <circle cx="41.6" cy="-24" r="5"/>
+      <circle cx="41.6" cy="24" r="5"/>
+      <circle cx="0" cy="48" r="5"/>
+      <circle cx="-41.6" cy="24" r="5"/>
+      <circle cx="-41.6" cy="-24" r="5"/>
+    </g>
+    <g stroke="#326ce5" stroke-width="2" opacity="0.7">
+      <line x1="0" y1="0" x2="0" y2="-48"/>
+      <line x1="0" y1="0" x2="41.6" y2="-24"/>
+      <line x1="0" y1="0" x2="41.6" y2="24"/>
+      <line x1="0" y1="0" x2="0" y2="48"/>
+      <line x1="0" y1="0" x2="-41.6" y2="24"/>
+      <line x1="0" y1="0" x2="-41.6" y2="-24"/>
+    </g>
+  </g>
+
+  <text x="190" y="110" font-family="Verdana, Arial, sans-serif" font-size="40" font-weight="bold" fill="#ffffff">
+    Kubernetes Automation Platform
+  </text>
+  <text x="190" y="145" font-family="Verdana, Arial, sans-serif" font-size="18" fill="#9aa7bd">
+    Vagrant · Ansible · kubeadm · containerd · Calico CNI
+  </text>
+
+  <rect x="190" y="175" width="860" height="3" fill="url(#accent)"/>
+
+  <text x="190" y="205" font-family="Verdana, Arial, sans-serif" font-size="15" fill="#6b7891">
+    Infrastructure as Code  •  Configuration Management  •  Multi-Node Cluster Automation
+  </text>
+
+  <text x="1090" y="240" font-family="Verdana, Arial, sans-serif" font-size="13" fill="#444f63" text-anchor="end">
+    devriston.com.pk
+  </text>
+</svg>
